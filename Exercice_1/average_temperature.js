@@ -30,8 +30,8 @@ function maxAverage (array) {
 	console.log(max);
 }
 
-// var array = [10, 20, 30, 40, 50];
-var array = [10, 20, 9, 16, 17];
+var array = [10, 20, 30, 40, 50];
+// var array = [10, 20, 9, 16, 17];
 // var array = [5, 4, 3];
 // var array = [1];
 // var array = [5, 2, 1, 4, 9, 2, 15];
