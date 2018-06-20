@@ -10,7 +10,7 @@ Dans ce fichiers, il y a plusieurs lignes de commentées, ce sont les arrays de 
 
 Commentez et décommentez les lignes au fur et à mesure pour tester la fonction.
 
-Pour l'exercice 2 :
+<h1>Pour l'exercice 2 :</h1>
 
 cd/Exercice_2
 
