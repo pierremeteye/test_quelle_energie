@@ -1,4 +1,9 @@
 import React, { Component } from 'react';
+import axios from 'axios';
+
+
+// Custom import
+import PostList from './Components/PostList';
 
 
 
@@ -7,37 +12,18 @@ class App extends Component {
 		super(props);
 		this.state = {
 			error: null,
-			isLoaded: false,
-			items: []
+			data: []
 		};
 	}
 
-
-	componentDidMount() {
-		fetch(`http://localhost:3000/posts`, {
-			method: 'post',
-			body: JSON.stringify({ "content": "some interesting content" })
-		})
-		.then(function (response) {
-			return response.json()
-		})
-		.then(function (data) {
-			console.log('post request response data', data)
-		})
-	}
 	render() {
-		const { error, isLoaded, items } = this.state;
+		const { error } = this.state;
 		if (error) {
 			return <div>Error: {error.message}</div>;
-		} else if (!isLoaded) {
-			return <div>Loading...</div>;
 		} else {
-			console.log(this.state.items);
 			return (
-				<ul>
-				
-				</ul>
-				);
+				<PostList />
+			);
 		}
 	}
 }
